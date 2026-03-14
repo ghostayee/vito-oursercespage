@@ -1,0 +1,243 @@
+:root {
+  --green-main: #0a8a4a;
+  --green-light: #cdeed1;
+  --blue-main: #1a73e8;
+  --text-main: #333333;
+  --bg-main: #ffffff;
+  --bg-soft: #f5f9f6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #cdebdc;
+  color: var(--text-main);
+}
+
+/* HEADER & MENU */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background: var(--green-main);
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.menu a:hover {
+  transform: scale(1.2);
+}
+
+/* PRESENTATION SPACE */
+.presentation {
+  padding: 40px 40px 60px;
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+  color: var(--green-main);
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--blue-main);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: #1559b5;
+}
+
+/* PILLARS SECTION */
+.pillars {
+  background-image: url("images/powerplant.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.pillars2 {
+  background-color: #b1f1d4;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.pillars h2 {
+  margin-bottom: 20px;
+  color: var(--green-main);
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.pillar {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 16px;
+  border: 1px solid #e0ede4;
+}
+
+.pillar h3 {
+  margin-bottom: 10px;
+  color: var(--blue-main);
+}
+
+.pillar p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* VISUAL HINT SECTION */
+.visual-hint {
+  max-width: 800px;
+}
+
+.visual-hint h2 {
+  margin-bottom: 10px;
+  color: var(--green-main);
+}
+
+.visual-hint p {
+  line-height: 1.6;
+}
+
+/* FOOTER */
+.site-footer {
+  padding: 16px 40px;
+  background: #f0f4f2;
+  font-size: 0.85rem;
+  color: #666666;
+  margin-top: 40px;
+}
+/* IMAGE */
+.responsive-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* logo */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between image and text */
+}
+
+.menu a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.projects {
+  width: 100%;
+}
+/*story*/
+.case-history {
+  max-width: 10000px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.case-history h2,
+.case-history h3 {
+  margin-top: 30px;
+}
+
+.case-history a {
+  color: green;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.case-history a:hover {
+  text-decoration: underline;
+}
+/* slide show*/
+.slideshow {
+width: 100%;
+max-width: 1920px;
+height: 450px;
+margin-left: auto;
+margin-right: auto;
+overflow: hidden;
+position: relative;
+}
+
+.slide {
+width: 100%;
+height: 450px;
+object-fit: cover;
+position: absolute;
+top: 0;
+left: 0;
+opacity: 0;
+transition: opacity 5s ease;
+}
+
+.slide.active {
+opacity: 1;
+}
+.download-btn{
+background-color: green;
+color: orange;
+padding: 12px 20px;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+}
+
+.download-btn:hover{
+background-color: darkgreen;
+}
